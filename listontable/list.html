@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>list</title>
+    <script src="list.js"></script>
+    <link rel="stylesheet" href="list.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>age</th>
+          <th>color</th>
+        </tr>
+      </thead>
+      <!-- table body -->
+
+      <tbody>
+        <tr id="list"></tr>
+      </tbody>
+      <script>
+        let arr = ["shiro", "keywete", "doro", "tibs"];
+
+        let dispaly = "";
+        for (let elem of arr) {
+          console.log(elem);
+          dispaly = dispaly + "<td>" + elem + "</td>";
+        }
+        console.log(dispaly);
+        document.getElementById("list").innerHTML = dispaly;
+      </script>
+    </table>
+  </body>
+</html>
